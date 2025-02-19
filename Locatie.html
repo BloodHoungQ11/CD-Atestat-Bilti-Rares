@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatie - DPL Autopsii & Organe vii</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(114, 16, 16);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: rgba(255, 0, 0, 0.718);
+            padding: 15px;
+            margin: 5px 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top:5px;
+        }
+
+        .Navbar_Link{
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            gap: 50px;
+        }
+
+        .Navbar_Link a{
+            color: #000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .Navbar_Link a:hover{
+            color: #ffbcbc;
+            text-decoration: none;
+            transition: 0.3s;
+            transform: scale(1.2);
+        }
+
+        logoanimation img{
+            transition: transform 0.4s;
+        }
+
+        logoanimation img:hover{
+            transform: scale(1.2);
+        }
+        h2{
+            color: antiquewhite;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+
+        .content{
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        footer{
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <logoanimation>
+        <a href="http://127.0.0.1:5500/index.html" >
+            <img src="https://cdn-icons-png.flaticon.com/128/84/84390.png" width="60" height="60px" />
+        </a>
+    </logoanimation>
+    <h2><i>DPL Autopsii & Organe vii</i></h2>
+    <div class="Navbar_Link">
+        <a href="index.html"><i>Produse</i></a>
+        <a href="location.html"><i>Locatie</i></a>
+        <a href="about.html"><i>Despre Noi</i></a>
+        <a href="contact.html"><i>Contact</i></a>
+    </div>
+</nav>
+
+<div class="content">
+    <h2>Locatie</h2>
+    <p>Vizitează-ne la locația noastră! Poți folosi harta interactivă de mai jos pentru a naviga.</p>
+
+    <!-- Google Map Embed -->
+    <div id="map"></div>
+</div>
+
+<footer>
+    <p>&copy; 2025 DPL Autopsii & Organe vii | Toate drepturile rezervate</p>
+</footer>
+
+<!-- Google Maps API Script -->
+<script>
+    function initMap() {
+        // Create a map centered at a specific location
+        var location = { lat: 44.4268, lng: 26.1025 }; // Example: coordinates for Bucharest, Romania
+
+        // Create a new map object
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12, // Zoom level
+            center: location, // Set center of the map
+            mapTypeId: "roadmap", // Map type
+        });
+
+        // Add a marker at the specified location
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "DPL Autopsii & Organe vii",
+        });
+    }
+</script>
+
+<!-- Add Google Maps API link here (Replace YOUR_API_KEY with your actual API key) -->
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+    async
+></script>
+
+</body>
+</html>
