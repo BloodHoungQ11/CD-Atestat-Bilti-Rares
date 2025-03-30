@@ -110,8 +110,25 @@
             color: #fff;
             padding: 10px;
             position: relative;
-            bottom: 0;
+            margin-top: 100px;
             width: 100%;
+        }
+        .buton {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buton:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -133,26 +150,26 @@
 </nav>
 
 <div class="content">
-    <h2>Detalii Produs</h2>
+    <h2>Penisul Lui Luca Di Pietro</h2>
     
     <div class="product-detail">
         <div class="product-image">
-            <img src="https://via.placeholder.com/400x300/ff6666/fff?text=Produs+Exemplu" alt="Produs Exemplu">
+            <img src="https://www.art-prints-on-demand.com/kunst/al_barizi/schwarze_banane.jpg">
         </div>
         <div class="product-info">
-            <h3>Produs Exemplu</h3>
+            <h3>Descriere</h3>
             <p>
-                Acesta este un exemplu de produs descris detaliat pentru a oferi mai multe informații celor interesați. Aici vor fi menționate caracteristicile produsului, cum ar fi utilitatea, beneficiile și orice altceva important pentru cumpărător.
-            </p>
-            <p>
-                Acesta este un produs de înaltă calitate, special creat pentru a ajuta la cercetări avansate și intervenții medicale. Utilizarea acestui produs garantează rezultate excelente.
+                Un penis perfect care funcționeaza optim în cadrul funcțiilor sexuale, având o erecție fermă și constantă, menținând o circulație sanguină sănătoasă. Complet protejat de infecții, leziuni sau afecțiuni, având o igienă optimă și o sensibilitate adecvată pentru plăcere. În plus, ar contribui la sănătatea reproductivă, facilitând un act sexual sănătos și eficient.            
             </p>
             <div class="product-price">
-                <span>Preț:</span> 500 RON
+                <span>Preț:</span> 10.000.000 RON
             </div>
+            <button class="buton" onclick="onclick=addToCart({ id: 'produs18', name: 'Penis', price: 10000000 })">Cumpără</button>
+
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 
 <footer>
     <p>&copy; 2025 DPL Autopsii & Organe vii | Toate drepturile rezervate</p>

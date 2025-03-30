@@ -110,8 +110,25 @@
             color: #fff;
             padding: 10px;
             position: relative;
-            bottom: 0;
+            margin-top: 100px;
             width: 100%;
+        }
+        .buton {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buton:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -133,26 +150,25 @@
 </nav>
 
 <div class="content">
-    <h2>Detalii Produs</h2>
+    <h2>Urechea Lui Di Pietro</h2>
     
     <div class="product-detail">
         <div class="product-image">
-            <img src="https://via.placeholder.com/400x300/ff6666/fff?text=Produs+Exemplu" alt="Produs Exemplu">
+            <img src="https://saveourseas.com/wp-content/uploads/2022/10/web-image71-1024x721.jpg">
         </div>
         <div class="product-info">
             <h3>Produs Exemplu</h3>
             <p>
-                Acesta este un exemplu de produs descris detaliat pentru a oferi mai multe informații celor interesați. Aici vor fi menționate caracteristicile produsului, cum ar fi utilitatea, beneficiile și orice altceva important pentru cumpărător.
-            </p>
-            <p>
-                Acesta este un produs de înaltă calitate, special creat pentru a ajuta la cercetări avansate și intervenții medicale. Utilizarea acestui produs garantează rezultate excelente.
-            </p>
+                Urechile perfecte detecteaza sunetele cu o sensibilitate maximă, de la cele mai joase până la cele mai înalte frecvențe. Ar proteja structurile interne de orice daună sau infecție, menținând o auzire clară și fără tulburări. În plus, ar permite o localizare precisă a sunetelor, contribuind la orientarea și echilibrul corporal.            </p>
             <div class="product-price">
-                <span>Preț:</span> 500 RON
+                <span>Preț:</span> 88.887 RON
             </div>
+            <button class="buton" onclick="onclick=addToCart({ id: 'produs26', name: 'Urechi', price: 88887 })">Cumpără</button>
+
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 
 <footer>
     <p>&copy; 2025 DPL Autopsii & Organe vii | Toate drepturile rezervate</p>

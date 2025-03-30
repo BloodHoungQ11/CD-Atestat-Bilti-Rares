@@ -110,8 +110,25 @@
             color: #fff;
             padding: 10px;
             position: relative;
-            bottom: 0;
+            margin-top: 100px;
             width: 100%;
+        }
+        .buton {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buton:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -133,26 +150,26 @@
 </nav>
 
 <div class="content">
-    <h2>Detalii Produs</h2>
+    <h2>Timusul Lui Di Pietro</h2>
     
     <div class="product-detail">
         <div class="product-image">
-            <img src="https://via.placeholder.com/400x300/ff6666/fff?text=Produs+Exemplu" alt="Produs Exemplu">
+            <img src="https://www.ucl.ac.uk/immunity-transplantation/sites/immunity_transplantation/files/1675-human-thymus.jpg">
         </div>
         <div class="product-info">
-            <h3>Produs Exemplu</h3>
+            <h3>Descriere</h3>
             <p>
-                Acesta este un exemplu de produs descris detaliat pentru a oferi mai multe informații celor interesați. Aici vor fi menționate caracteristicile produsului, cum ar fi utilitatea, beneficiile și orice altceva important pentru cumpărător.
-            </p>
-            <p>
-                Acesta este un produs de înaltă calitate, special creat pentru a ajuta la cercetări avansate și intervenții medicale. Utilizarea acestui produs garantează rezultate excelente.
+                Un timus perfect care ar contribui la dezvoltarea și maturizarea celulelor T, esențiale pentru un sistem imunitar puternic. Ar funcționa optim în copilărie și adolescență, asigurând o apărare eficientă împotriva infecțiilor și bolilor. În plus, s-ar atrofia natural la vârsta adultă fără a compromite imunitatea generală a organismului.            
             </p>
             <div class="product-price">
-                <span>Preț:</span> 500 RON
+                <span>Preț:</span> 27.000 RON
             </div>
+            <button class="buton" onclick="onclick=addToCart({ id: 'produs25', name: 'Timus', price: 27000 })">Cumpără</button>
+
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 
 <footer>
     <p>&copy; 2025 DPL Autopsii & Organe vii | Toate drepturile rezervate</p>
