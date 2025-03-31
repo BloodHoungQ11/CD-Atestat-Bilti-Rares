@@ -5,113 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - DPL Autopsii & Organe vii</title>
     <style>
-        body{
+        body {
             width: 100%;
             height: 100vh;
-            background-color: rgb(114, 16, 16);
+            background: linear-gradient(135deg, #540d0d, #220303);
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden;
             overflow-x: hidden;
-
         }
 
-        nav{
-            background-color: rgba(255, 0, 0, 0.718);
-            padding: 15px;
-            margin: 5px 10px;
-            text-align: center;
-            height: 50px;
+        nav {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 15px 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             position: sticky;
-            top:5px;
+            top: 0;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .Navbar_Link{
+        .Navbar_Link {
             display: flex;
-            justify-content: end;
-            width: 100%;
-            gap: 50px;
+            gap: 30px;
         }
 
-        .Navbar_Link a{
-            color: #000;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-
-        .Navbar_Link a:hover{
-            color: #ffbcbc;
+        .Navbar_Link a {
+            color: #fff;
+            font-weight: bold;
             text-decoration: none;
-            transition: 0.3s;
-            transform: scale(1.2);
+            transition: color 0.3s, transform 0.3s;
         }
 
-        logoanimation img{
-            transition: transform 0.4s;
+        .Navbar_Link a:hover {
+            color: #ffbcbc;
+            transform: scale(1.1);
         }
 
-        logoanimation img:hover{
-            transform: scale(1.2);
-        }
-
-        h2{
-            color: antiquewhite;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-align: center;
-        }
-
-        .content{
+        .content {
+            max-width: 700px;
+            margin: 30px auto;
             padding: 20px;
-            margin: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-        }
-
-        .contact-text{
-            font-size: 1.1em;
-            line-height: 1.6;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
             text-align: center;
-        }
-
-        .contact-form{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .contact-form input,
-        .contact-form textarea{
-            padding: 10px;
+        .contact-form textarea {
+            width: 600px;
+            padding: 12px;
             font-size: 1rem;
             border-radius: 5px;
-            border: 1px solid #ccc;
-            background-color: #333;
+            border: 1px solid #ff4444;
+            background-color: #222;
             color: #fff;
         }
 
-        .contact-form input[type="submit"]{
-            background-color: rgba(255, 0, 0, 0.8);
+        .contact-form input[type="submit"] {
+            background: #ff0000;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: 0.3s;
+            font-weight: bold;
         }
 
-        .contact-form input[type="submit"]:hover{
-            background-color: rgba(255, 0, 0, 1);
+        .contact-form input[type="submit"]:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
         }
 
-        footer{
+        footer {
             text-align: center;
             background-color: #000;
             color: #fff;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
+            padding: 15px;
+            margin-top: 50px;
             width: 100%;
         }
     </style>
@@ -119,25 +92,22 @@
 <body>
 
 <nav>
-    <logoanimation>
-        <a href="http://127.0.0.1:5500/index.html">
-            <img src="https://cdn-icons-png.flaticon.com/128/84/84390.png" width="60" height="60px" />
-        </a>
-    </logoanimation>
-    <h2><i>DPL Autopsii & Organe vii</i></h2>
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/84/84390.png" width="50" height="50" />
+    </a>
+    <h2>DPL Autopsii & Organe vii</h2>
     <div class="Navbar_Link">
-        <a href="Produse.html"><i>Produse</i></a>
-        <a href="Locatie.html"><i>Locatie</i></a>
-        <a href="DespreNoi.html"><i>Despre Noi</i></a>
-        <a href="Contact.html"><i>Contact</i></a>
+        <a href="Produse.html">Produse</a>
+        <a href="Locatie.html">Locatie</a>
+        <a href="DespreNoi.html">Despre Noi</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Cos.html">Coș</a>
     </div>
 </nav>
 
 <div class="content">
     <h2>Contactează-ne</h2>
-    <div class="contact-text">
-        <p>Completează formularul de mai jos și te vom contacta cât mai curând posibil.</p>
-    </div>
+    <p>Completează formularul de mai jos și te vom contacta cât mai curând posibil.</p>
 
     <form class="contact-form" action="#" method="POST">
         <input type="text" name="name" placeholder="Numele tău" required>
